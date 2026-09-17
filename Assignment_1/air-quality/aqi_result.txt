@@ -1,0 +1,10 @@
+Air Quality Index (AQI) Analysis
+
+Location: Hyderabad
+
+Average AQI: 87.13
+
+AQI Category: Moderate
+
+Conclusion:
+The calculated average AQI is 87.13, which falls under the Moderate category.
