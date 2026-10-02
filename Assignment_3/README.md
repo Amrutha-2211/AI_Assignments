@@ -1,47 +1,88 @@
-# Dijkstra's Algorithm – Indian City Shortest Route
+## Overview
 
-## Objective
+This repository contains Python implementations of five problems based on search algorithms, pathfinding, and constraint satisfaction techniques. The programs demonstrate shortest-path finding, obstacle avoidance, dynamic path replanning, and map coloring.
 
-The objective of this project is to find the shortest route between two Indian cities using Dijkstra's algorithm based on the given road distances.
+## Algorithms Implemented
 
-## Methodology
+### 1. Dijkstra's Algorithm – Indian City Routes
 
-The following steps are performed:
+* Finds the shortest route between two Indian cities.
+* Uses road distances as edge weights.
+* Calculates the minimum total travel distance.
+* Displays the route and number of visited cities.
 
-1. Define the Indian cities and their road distances using an adjacency list.
-2. Take the source and destination cities as input.
-3. Initialize the distance of the source city as zero and all other cities as infinity.
-4. Use a priority queue to select the city with the minimum distance.
-5. Update the distances of neighboring cities.
-6. Continue until the destination is reached.
-7. Reconstruct and display the shortest route.
+### 2. UGV Navigation Using A*
 
-## Algorithm Used
+* Simulates an Unmanned Ground Vehicle navigating a 70 × 70 grid.
+* Generates obstacles with low, medium, and high density.
+* Uses the A* search algorithm with Manhattan distance.
+* Finds the shortest available path while avoiding obstacles.
+* Visualizes the grid and the calculated path.
 
-* Dijkstra's Algorithm
+### 3. UGV Navigation with Dynamic Obstacles
 
-## Result
+* Simulates an environment where obstacles can appear during navigation.
+* Uses repeated A* search to recalculate the route.
+* Allows the UGV to change its path when a new obstacle is detected.
+* Measures travel distance and replanning operations.
 
-The program displays:
+### 4. Uniform Cost Search – Indian City Routes
 
-* Shortest route between the selected cities.
-* Total distance of the route in kilometers.
-* Number of visited cities.
+* Implements Uniform Cost Search to find a minimum-distance route between Indian cities.
+* Uses a priority queue to expand the lowest-cost node.
+* Displays the route, total distance, and number of expanded cities.
 
-## Conclusion
+### 5. Telangana District Map Coloring
 
-The project demonstrates how Dijkstra's algorithm can be used to find the minimum-distance route in a weighted graph. It is useful for understanding shortest-path problems and route optimization.
+* Implements the map coloring problem using backtracking.
+* Represents districts as nodes and adjacency relationships as edges.
+* Assigns different colors to neighboring districts.
+* Uses NetworkX and Matplotlib to visualize the colored graph.
 
 ## Technologies Used
 
-Python
-Heapq
-Graph Data Structures
+* Python
+* Matplotlib
+* NetworkX
+* Heapq
+* Random
+* Time
+
+## Installation
+
+Install the required libraries using:
+
+```bash
+pip install matplotlib networkx
+```
 
 ## How to Run
 
-Clone the repository and run:
+1. Clone the repository:
 
 ```bash
-python dijkstra_indian_cities.py
+git clone YOUR_GITHUB_REPOSITORY_URL
 ```
+
+2. Navigate to the project folder:
+
+```bash
+cd AI-Search-Algorithms
+```
+
+3. Run the required Python program:
+
+```bash
+python filename.py
+```
+
+## Evaluation Metrics
+
+The algorithms are evaluated using the following measures:
+
+* Shortest path distance
+* Number of nodes explored
+* Execution time
+* Goal-reaching success
+* Number of replanning operations
+* Constraint satisfaction in map coloring
