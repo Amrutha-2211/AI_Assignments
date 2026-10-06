@@ -1,10 +1,27 @@
-Air Quality Index (AQI) Analysis
+Average AQI: 87.13136202174678
+Minimum AQI: 14.916666666666666
+Maximum AQI: 167.0
 
-Location: Hyderabad
+Best Air Quality Day:
+Date: 2022-12-15 00:00:00
+AQI: 14.916666666666666
+Category: Good
 
-Average AQI: 87.13
+Worst Air Quality Day:
+Date: 2026-01-03 00:00:00
+AQI: 167.0
+Category: Unhealthy
 
-AQI Category: Moderate
+Latest Observation:
+Date: 2026-02-18 00:00:00
+AQI: 124.08333333333331
+Category: Unhealthy for Sensitive Groups
 
-Conclusion:
-The calculated average AQI is 87.13, which falls under the Moderate category.
+AQI Category Counts:
+AQI_Category
+Moderate                          552
+Unhealthy for Sensitive Groups    410
+Good                              259
+Unhealthy                          73
+Hazardous                           4
+Name: count, dtype: int64
